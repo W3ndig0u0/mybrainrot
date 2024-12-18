@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="application-name" content="Web Uppgift">
+  <meta name="author" content="Jingxiang Xu">
+  <meta name="description" content="Contact form submission page">
+  <meta name="generator" content="HTML Generator 1.0">
+  <meta name="keywords" content="HTML, Form, Contact, Future Interests, Advice">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Contact Me - Future Interests</title>
+</head>
+<body>
+  <main>
+    <header>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="now.html">Now</a>
+        <a href="history.html">History</a>
+      </nav>
+    </header>
+
+    <section class="form-section">
+      <h1>Contact Me</h1>
+      <p>I'm interested in exploring new passions and interests, but I'm not sure where my future might take me. I would love to hear your thoughts or suggestions for potential future interests I might enjoy!</p>
+      
+      <form action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php" method="POST" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Your Contact Information</legend>
+          
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus title="Please enter your full name.">
+          
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required title="Please enter a valid email address.">
+          
+          <label for="website">Your Website (or Facebook/Twitter):</label>
+          <input type="url" id="website" name="website" placeholder="Enter your website URL" required title="Please enter a valid URL.">
+
+          <label for="reply">Would you like a reply?</label>
+          <input type="checkbox" id="reply" name="reply">
+          
+          <fieldset>
+            <legend>Would you like a copy of your message?</legend>
+            <label for="copyYes">Yes</label>
+            <input type="radio" id="copyYes" name="copy" value="Yes" required>
+            
+            <label for="copyNo">No</label>
+            <input type="radio" id="copyNo" name="copy" value="No" required>
+          </fieldset>
+          
+          <label for="subject">What would you like to suggest?</label>
+          <select id="subject" name="subject" required title="Please select a subject">
+            <optgroup label="Suggestions">
+              <option value="tech">Technology/Programming</option>
+              <option value="design">Design & Art</option>
+              <option value="gaming">Gaming</option>
+              <option value="music">Music Production</option>
+              <option value="sports">Sports & Fitness</option>
+            </optgroup>
+            <optgroup label="General">
+              <option value="general">General Ideas</option>
+            </optgroup>
+          </select>
+
+          <label for="fileUpload">Upload a file (Optional):</label>
+          <input type="file" id="fileUpload" name="file" title="You can upload a file here if you'd like to share more details.">
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="6" placeholder="Enter your message here" required title="Please enter your message with suggestions."></textarea>
+          
+          <input type="submit" value="Send Message">
+        </fieldset>
+      </form>
+    </section>
+
+    <footer>
+      <p>Copyright &copy; 2024 Jingxiang Xu</p>
+      <a href="mailto:jingxiang304@gmail.com">Contact Me via Email</a>
+    </footer>
+  </main>
+</body>
+</html>
